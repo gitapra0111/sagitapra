@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body>
+  <body class="projects-page">
     <div class="cs_preloader cs_center">
       <div class="cs_preloader_in"></div>
     </div>
@@ -68,10 +68,10 @@
                   data-wow-duration="0.8s"
                   data-wow-delay="0.2s"
                 >
-                  My Projects
+                   Projects
                 </h1>
                 <p class="cs_hero_text">
-                  Here are some of the projects I have worked on.
+                  A collection of websites, data projects, and intelligent applications I have built.
                 </p>
               </div>
             </div>
@@ -80,12 +80,33 @@
       </section>
 
       <section
-        class="cs_filled_bg cs_100_bg"
+        class="cs_filled_bg cs_100_bg projects-section"
         data-src="assets/img/bg/protfolio_bg2.png"
       >
         <div class="cs_height_150 cs_height_lg_80"></div>
         <div class="container">
-          <div class="cs_isotop cs_isotop_col_2 cs_has_gutter_80">
+          <div class="project-toolbar">
+            <div class="project-toolbar-copy">
+              <span class="project-eyebrow">Explore my work</span>
+              <h2>Projects </h2>
+              <p>Choose a category to find the work you are interested in.</p>
+            </div>
+            <nav
+              class="cs_isotop_filter cs_style1 project-filters"
+              aria-label="Filter projects by category"
+            >
+              <ul>
+                <li class="active"><a href="#" data-filter="*">All projects</a></li>
+                <li><a href="#" data-filter=".project-item--website">Websites</a></li>
+                <li><a href="#" data-filter=".project-item--data-analysis">Data Analysis</a></li>
+                <li><a href="#" data-filter=".project-item--data-science">Data Science</a></li>
+                <li><a href="#" data-filter=".project-item--Intelligence">Business Intelligence</a></li>
+                <li><a href="#" data-filter=".project-item--computer-vision">Computer Vision</a></li>
+                <li><a href="#" data-filter=".project-item--automation">Automation</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cs_isotop cs_isotop_col_3 cs_has_gutter_40 project-grid">
             <div class="cs_grid_sizer"></div>
 
             <!-- Tambah Project Baru disini -->
@@ -114,7 +135,7 @@
           </div> -->
 
             <!-- Website SMA Senopati -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--website">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -130,13 +151,12 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/SHS-senopati.png"
+                    src="project/website/SHS-senopati.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Website</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     Website SMA Senopati Sidoarjo
                   </h2>
@@ -163,7 +183,7 @@
             </div>
 
             <!-- PT.Fazana Berkah Mulia -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--website">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -179,13 +199,12 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/PT.FBM.png"
+                    src="project/website/PT.FBM.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Website</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     Web E-Presensi PT. Fazana Berkah Mulia
                   </h2>
@@ -211,8 +230,8 @@
               </div>
             </div>
 
-            <!-- DataScience health analysis -->
-            <div class="cs_isotop_item">
+             <!-- Website Amrih Waras Klinik -->
+            <div class="cs_isotop_item project-item project-item--website">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -223,23 +242,166 @@
                   <div class="cs_input_filed w-100"></div>
                 </div>
                 <a
-                  href="http://hrtech-ai.wuaze.com/?i=1"
+                  href="https://amrih-waras.free.nf/?i=1"
                   class="cs_portfolio_thumbnail cs_zoom"
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/heal-analysis.png"
+                    src="project/website/Klinik-amrihwaras.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Website</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
-                    Data Science - health analysis
+                    Website Klinik Amrih Waras
                   </h2>
                   <a
-                    href="http://hrtech-ai.wuaze.com/?i=1"
+                    href="https://amrih-waras.free.nf/?i=1"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+             <!-- DashDay  -->
+            <div class="cs_isotop_item project-item project-item--website">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://gitapra0111.github.io/CodingCamp-12-Oktober26-Sagita_Pra_Kosa/"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="project/website/DashDay.png"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Website</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                    Daily Dashboard
+                  </h2>
+                  <a
+                    href="https://gitapra0111.github.io/CodingCamp-12-Oktober26-Sagita_Pra_Kosa/"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brazilian E-Commerce Analysis -->
+            <div class="cs_isotop_item project-item project-item--data-analysis">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://public.tableau.com/app/profile/sagita.pra.kosa/viz/E-CommerceSalesPerformance_17878184369620/Top10ProductCategoriesbyRevenue"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="project/data-analysis/Brazilian E-Commerce Analysis.jpg"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data analysis</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                    Brazilian E-Commerce Analysis
+                  </h2>
+                  <a
+                    href="https://github.com/gitapra0111/data_analysis-Brazilian_E-Commerce_by_Olist"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="cs_isotop_item project-item project-item--data-analysis">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://github.com/gitapra0111/data_analysis-Supply_Chain_Pricing/"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="https://github.com/gitapra0111/data_analysis-Supply_Chain_Pricing/blob/main/output/avg_cost_by_shipment_mode.png?raw=true"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data analysis</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                    Global Supply Chain Shipment Pricing & Delivery Analysis
+                  </h2>
+                  <a
+                    href="https://github.com/gitapra0111/data_analysis-Supply_Chain_Pricing/"
                     class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
                   >
                     <span
@@ -261,7 +423,7 @@
             </div>
 
             <!-- DataScience Heart Disease -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--data-science">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -277,15 +439,14 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/Heart-Disease.png"
+                    src="project/data-science/Heart-Disease.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data Science</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
-                    Data Science - Heart Disease Prediction
+                    Heart Disease Prediction
                   </h2>
                   <a
                     href="https://datascienceheart-disease-8rghypnnyahayz8f8hdnnu.streamlit.app/"
@@ -309,8 +470,104 @@
               </div>
             </div>
 
+            <!-- DataScience HEAL-analysis -->
+            <div class="cs_isotop_item project-item project-item--data-science">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://datasciencesleephealthandlifestyle-dctysdnxd6al8efjcz53ok.streamlit.app/"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="project/data-science/heal-analysis.png"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data Science</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                    Employee Stress Level Prediction System
+                  </h2>
+                  <a
+                    href="https://datasciencesleephealthandlifestyle-dctysdnxd6al8efjcz53ok.streamlit.app/"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- DataScience analisis sentimen dan NLP -->
+            <div class="cs_isotop_item project-item project-item--data-science">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://github.com/gitapra0111/realtime-sentiment-pipeline"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="project/data-science/analisis sentimen dan NLP.png"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data Science</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                    Real-Time Sentiment Analysis of YouTube Comments Based on NLP
+                  </h2>
+                  <a
+                    href="https://github.com/gitapra0111/realtime-sentiment-pipeline"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <!-- data science BCI -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--data-science">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -330,11 +587,10 @@
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data Science</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
-                    Data Science - Brain Computer Interface
+                    Brain Computer Interface
                   </h2>
                   <a
                     href="https://github.com/gitapra0111/idsc-2026-bigP3BCI"
@@ -359,7 +615,7 @@
             </div>
 
             <!-- face preprocessing data -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--data-science">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -375,13 +631,12 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/p6.png"
+                    src="project/data-science/face-preprocessing.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Data Science</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     face preprocessing data
                   </h2>
@@ -408,7 +663,7 @@
             </div>
 
             <!-- YOLO Detection Object -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--computer-vision">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -424,13 +679,12 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/yolov8.png"
+                    src="project/computer-vision/yolov8.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Computer Vision</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     Object Detection Yolo V8
                   </h2>
@@ -456,57 +710,9 @@
               </div>
             </div>
 
-            <!-- Website Amrih Waras Klinik -->
-            <div class="cs_isotop_item">
-              <div
-                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
-              >
-                <div class="cs_browser cs_style_1">
-                  <div class="cs_btns">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="cs_input_filed w-100"></div>
-                </div>
-                <a
-                  href="https://amrih-waras.free.nf/?i=1"
-                  class="cs_portfolio_thumbnail cs_zoom"
-                >
-                  <img
-                    class="cs_zoom_in w-100"
-                    src="project/Klinik-amrihwaras.png"
-                    alt="Project Image"
-                  />
-                </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
-                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
-                    Website Klinik Amrih Waras
-                  </h2>
-                  <a
-                    href="https://amrih-waras.free.nf/?i=1"
-                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
-                  >
-                    <span
-                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
-                      >View work</span
-                    >
-                    <svg
-                      width="5"
-                      height="9"
-                      viewBox="0 0 5 9"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
 
             <!-- Website Buket Takadoin.Aja -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--website">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -522,13 +728,12 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/p2.png"
+                    src="project/website/Takadoin.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Website</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     Project Buket Takadoin.Aja
                   </h2>
@@ -555,7 +760,7 @@
             </div>
 
             <!-- lego -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--website">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -571,13 +776,12 @@
                 >
                   <img
                     class="cs_zoom_in w-100"
-                    src="project/p4.png"
+                    src="project/website/lego.png"
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Website</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     Project Lego
                   </h2>
@@ -604,7 +808,7 @@
             </div>
 
             <!-- Bot Daily Automation -->
-            <div class="cs_isotop_item">
+            <div class="cs_isotop_item project-item project-item--automation">
               <div
                 class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
               >
@@ -624,14 +828,109 @@
                     alt="Project Image"
                   />
                 </a>
-                <div
-                  class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute"
-                >
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Automation</span>
                   <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
                     Daily Automation Bot
                   </h2>
                   <a
                     href="https://github.com/gitapra0111/daily-automation-bot"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+             <!-- Intelligence 1-->
+            <div class="cs_isotop_item project-item project-item--Intelligence">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://public.tableau.com/app/profile/sagita.pra.kosa/viz/Flight-Analytics-Dashboard/Dashboard1"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="project/BI/BI-1.png"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Business Intelligence</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                    Automated Flight Booking ETL Pipeline & Data Warehouse
+                  </h2>
+                  <a
+                    href="https://public.tableau.com/app/profile/sagita.pra.kosa/viz/Flight-Analytics-Dashboard/Dashboard1"
+                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
+                  >
+                    <span
+                      class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase"
+                      >View work</span
+                    >
+                    <svg
+                      width="5"
+                      height="9"
+                      viewBox="0 0 5 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+             <!-- Intelligence 2-->
+            <div class="cs_isotop_item project-item project-item--Intelligence">
+              <div
+                class="cs_portfolio cs_style_2 cs_radius_20 position-relative"
+              >
+                <div class="cs_browser cs_style_1">
+                  <div class="cs_btns">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cs_input_filed w-100"></div>
+                </div>
+                <a
+                  href="https://public.tableau.com/app/profile/sagita.pra.kosa/viz/E-Commerce_RFM_Segmentation/Dashboard1"
+                  class="cs_portfolio_thumbnail cs_zoom"
+                >
+                  <img
+                    class="cs_zoom_in w-100"
+                    src="project/BI/BI-2.png"
+                    alt="Project Image"
+                  />
+                </a>
+                <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                  <span class="project-category">Business Intelligence</span>
+                  <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                     E-Commerce RFM Segmentation & Analytics
+                  </h2>
+                  <a
+                    href="https://public.tableau.com/app/profile/sagita.pra.kosa/viz/E-Commerce_RFM_Segmentation/Dashboard1"
                     class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium"
                   >
                     <span
